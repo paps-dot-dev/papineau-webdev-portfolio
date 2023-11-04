@@ -4,17 +4,19 @@ import viteLogo from '/vite.svg'
 import './App.css'
 import MainLayout from './Layouts/MainLayout'
 import Home from './pages/Home'
+import Projects from './pages/Projects'
 
 function App() {
   return (
     <>
-      <MainLayout>
-        <Router>
+      <Router>
+        <MainLayout>
           <Routes>
             <Route path='/' element={<Home />} />
+            <Route path='/projects' element={<Projects />} />
           </Routes>
-        </Router>
-      </MainLayout>
+        </MainLayout>
+      </Router>
     </>
   )
 }

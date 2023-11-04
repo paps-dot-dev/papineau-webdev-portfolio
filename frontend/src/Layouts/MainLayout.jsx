@@ -19,7 +19,7 @@ function MainLayout({ children }) {
           <Navigation handleBlur={handleBlur} />
         </div>
       </header>
-      <main className={`mb-auto ${isBlur && 'blur'}`}>{children}</main>
+      <main className={`mb-auto  ${isBlur && 'blur'}`}>{children}</main>
       <footer className='bg-slate-300'> This is a footer</footer>
     </div>
   )
