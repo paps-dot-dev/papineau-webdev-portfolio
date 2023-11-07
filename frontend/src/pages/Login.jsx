@@ -47,7 +47,7 @@ function Login({ handleLogin }) {
           <input
             onChange={handleChange}
             value={formData}
-            className='focus-within:outline-none'
+            className='focus-within:outline-none font-light mx-2'
           />
         </div>
         <button

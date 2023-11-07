@@ -47,7 +47,7 @@ function MainLayout({ children }) {
       <main className={`mb-auto  ${isBlur && 'blur'}`}>{children}</main>
       <footer>
         {' '}
-        <p className='text-xl'>{today}</p>
+        <p className='text-xl text-center'>Footer Eventually Going Here</p>
       </footer>
       <BottomNav />
     </div>

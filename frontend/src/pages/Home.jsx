@@ -16,7 +16,7 @@ function Home({ user }) {
   })
   console.log(modalOpen)
   return modalOpen ? (
-    <div className='flex flex-col justify-center items-center'>
+    <div className='flex flex-col justify-center h-screen items-center'>
       <img
         className='rounded-xl'
         src={gif}
@@ -29,9 +29,9 @@ function Home({ user }) {
     <div>
       <h1 className='text-[5em] font-bold mb-8 mt-4'>Hello, {user}!</h1>
       <SpotifyContainer user={user} />
-      <h1 className='text-[3em] text-center font-bold bg-gradient-to-br from-purple-500 to-indigo-400 text-transparent bg-clip-text'>
+      <h2 className='text-[3em] pt-14 mb-2 text-center font-bold bg-gradient-to-br from-purple-500 to-indigo-400 text-transparent bg-clip-text'>
         Technologies I Use:
-      </h1>
+      </h2>
       <TechContainer />
       <div className='mt-32 flex justify-start items-center mx-4'>
         <img src={headshot} className='rounded-full w-[144px]' />
