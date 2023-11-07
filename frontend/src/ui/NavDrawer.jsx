@@ -9,7 +9,7 @@ function NavDrawer({ toggleDrawer }) {
   const handleNav = (e) => {
     let slug = e.target.innerHTML.toLowerCase()
     if (slug === 'home') {
-      navigate('/')
+      navigate('/home')
       toggleDrawer()
     } else {
       navigate(`/${slug}`)
@@ -18,7 +18,7 @@ function NavDrawer({ toggleDrawer }) {
     }
   }
   return (
-    <nav className='h-screen  bg-indigo-400 bg-opacity-80 border-2 absolute top-0 right-0 overflow-y-auto w-2/3 z-10'>
+    <nav className='h-screen  bg-indigo-600 bg-opacity-80 border-2 absolute top-0 right-0 overflow-y-auto w-2/3 z-10'>
       <MdArrowBack
         onClick={toggleDrawer}
         className='rotate-180 text-5xl hover:text-white ease-linear duration-100'

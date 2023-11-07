@@ -17,7 +17,7 @@ function Navigation({ handleBlur }) {
       ) : (
         <MdMenuOpen
           onClick={toggleDrawer}
-          className=' lg:hidden text-[2.5em] ml-auto bg-gray-300 bg-opacity-60 p-1 rounded-full sticky ring-indigo-400 ring-2'
+          className=' lg:hidden text-[2.5em] ml-auto mr-4 mt-10 right-10 top-10 '
         />
       )}
     </>
