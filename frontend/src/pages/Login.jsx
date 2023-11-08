@@ -17,12 +17,17 @@ function Login({ handleLogin }) {
   const handleSubmit = (e) => {
     e.preventDefault()
 
-    handleLogin(formData)
+    if (formData === '') {
+      handleLogin('Anonymous')
+    } else {
+      handleLogin(formData)
+    }
+
     navigate('/home')
   }
 
   const handleAnonymous = () => {
-    handleLogin('Stranger')
+    handleLogin('Anonymous')
     navigate('/home')
   }
   return (
@@ -30,10 +35,10 @@ function Login({ handleLogin }) {
       <h1 className='absolute top-0 text-[2em] font-light  '>Shawn Papineau</h1>
       <form
         onSubmit={handleSubmit}
-        className='dark:bg-white h-1/2 w-4/5 flex flex-col justify-center mt-32 items-center  rounded-2xl mb-16'>
+        className='dark:bg-white h-1/2 w-4/5 lg:w-1/2 flex flex-col justify-center mt-32 items-center lg:p-10  rounded-2xl mb-16'>
         <img
           src={headshot}
-          className='absolute top-40 lg:w-1/4 lg:relative lg:top-0 rounded-full w-1/2'
+          className=' lg:max-w-1/4 -translate-y-[100px] lg:translate-y-0 lg:top-0 rounded-full w-[256px]'
         />
 
         <p className='text-[2em] font-semibold bg-gradient-to-r from-purple-600 to-indigo-600 text-transparent bg-clip-text'>
@@ -52,7 +57,7 @@ function Login({ handleLogin }) {
         </div>
         <button
           type='submit'
-          className='text-black ring-2 rounded-md w-3/4 mt-4 p-4 ring-indigo-600 text-2xl font-light bg-gradient-to-br from-purple-500 to-indigo-600 hover:bg-white hover:text-transparent hover:bg-clip-text  hover:-translate-y-2 hover:shadow-2xl ease-in-out duration-200'>
+          className='text-white ring-2 rounded-md w-3/4 mt-4 p-4 ring-indigo-600 text-2xl font-light bg-gradient-to-br from-purple-500 to-indigo-600 hover:bg-white hover:text-transparent hover:bg-clip-text  hover:-translate-y-2 hover:shadow-2xl ease-in-out duration-200'>
           Enter
         </button>
         <button

@@ -16,7 +16,7 @@ import {
 
 function TechContainer() {
   return (
-    <ul className='grid grid-cols-4 gap-4 w-3/4 m-auto bg-slate-700 text-5xl p-8 rounded-xl'>
+    <ul className='grid grid-cols-4 gap-4 w-3/4 lg:w-1/2 m-auto bg-slate-700 text-5xl p-8 lg:p-20 rounded-xl'>
       <li className='flex justify-center'>
         <SiJavascript />
       </li>

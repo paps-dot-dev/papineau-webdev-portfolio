@@ -4,7 +4,7 @@ import { SiGithub, SiInstagram, SiLinkedin } from 'react-icons/si'
 
 function SocialLinks() {
   return (
-    <div className='flex justify-between items-center w-3/4 m-auto py-2 text-3xl'>
+    <div className='flex justify-between items-center w-3/4 m-auto py-2 text-3xl lg:text-2xl'>
       <a
         target='_blank'
         href='https://www.github.com/paps-dot-dev'

@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom'
 
 function BottomNav() {
   return (
-    <nav className='sticky z-10 bottom-0 w-screen bg-slate-700 text-2xl'>
+    <nav className='lg:hidden sticky z-10 bottom-0 w-screen bg-slate-700 text-2xl'>
       <div className='flex justify-between  items-center mx-16'>
         <Link
           id='projects'

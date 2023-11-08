@@ -24,7 +24,7 @@ import {
 
 function LoginSlider() {
   return (
-    <div className=' w-full text-white'>
+    <div className=' w-full text-white lg:w-1/2'>
       <Swiper
         effect={'coverflow'}
         grabCursor={true}
